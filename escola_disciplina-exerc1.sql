@@ -1,7 +1,3 @@
-USE master
-
-DROP DATABASE escola_disciplina
-
 CREATE DATABASE escola_disciplina
 GO
 USE escola_disciplina
