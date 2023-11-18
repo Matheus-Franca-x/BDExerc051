@@ -1,7 +1,3 @@
-USE master
-
-DROP DATABASE oficina
-
 CREATE DATABASE oficina
 GO
 USE oficina
