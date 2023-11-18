@@ -31,3 +31,11 @@
 |6	|Banco de Dados I	|2	|Noite	|3
 |7	|Estrutura de Dados	|4	|Tarde	|4
 |8	|Estrutura de Dados	|4	|Noite	|4
+
+### Consultar:
+- Nome e sobrenome, como nome completo dos Alunos Matriculados
+- Rua, nº , Bairro e CEP como Endereço do aluno que não tem telefone
+- Telefone do aluno com RA 12348
+- Nome e Turno dos cursos com 2800 horas
+- O semestre do curso de Banco de Dados I noite
+
