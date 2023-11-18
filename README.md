@@ -77,7 +77,7 @@ DXO9876	|2	|1	|125	|07/08/2020
 
 ## Consultar em Subqueries
 - Telefone do dono do carro Ka, Azul
-- Endereço concatenado do cliente que fez o serviço do dia 02/08/2009 -> corrigido para 02/08/2020
+- Endereço concatenado do cliente que fez o serviço do dia 02/08/2009 → corrigido para 02/08/2020
 
 ## Consultar:
 - Placas dos carros de anos anteriores a 2001
