@@ -39,3 +39,48 @@
 - Nome e Turno dos cursos com 2800 horas
 - O semestre do curso de Banco de Dados I noite
 
+## Exercicio 2:
+
+### Cliente:
+|Nome	|Logradouro	|Nº	|Bairro	|Telefone	|Carro
+|-|-|-|-|-|-
+|João Alves|	R. Pereira Barreto|	1258	|Jd. Oliveiras|	2154-9658|	DXO9876
+|Ana Maria|	R. 7 de Setembro|	259	|Centro|	9658-8541	|LKM7380
+|Clara Oliveira|	Av. Nações Unidas|	10254	|Pinheiros|	2458-9658	|EGT4631
+|José Simões|	R. XV de Novembro|	36	|Água Branca|	7895-2459	|BCD7521
+|Paula Rocha|	R. Anhaia|	548	|Barra Funda|	6958-2548	|AFT9087
+
+### Carro:
+|Placa	|Marca	|Modelo	|Cor	|Ano
+|-|-|-|-|-
+|AFT9087|	VW	|Gol	|Preto	|2007
+|DXO9876|	Ford	|Ka	|Azul	|2000
+|EGT4631|	Renault|	Clio	|Verde	|2004
+|LKM7380|	Fiat	|Palio	|Prata	|1997
+|BCD7521|	Ford	|Fiesta	|Preto	|1999
+
+### Peças:
+|Código	|Nome	|Valor
+|-|-|-
+|1	|Vela	|70
+|2	|Correia Dentada	|125
+|3	|Trambulador	|90
+|4	|Filtro de Ar	|30
+
+### Serviços:
+|Carro	|Peça	|Quantidade	|Valor	|Data
+|-|-|-|-|-
+DXO9876	|1	|4	|280	|01/08/2020
+DXO9876	|4	|1	|30	|01/08/2020
+EGT4631	|3	|1	|90	|02/08/2020
+DXO9876	|2	|1	|125	|07/08/2020
+
+## Consultar em Subqueries
+- Telefone do dono do carro Ka, Azul
+- Endereço concatenado do cliente que fez o serviço do dia 02/08/2009 -> corrigido para 02/08/2020
+
+## Consultar:
+- Placas dos carros de anos anteriores a 2001
+- Marca, modelo e cor, concatenado dos carros posteriores a 2005
+- Código e nome das peças que custam menos de R$80,00
+
