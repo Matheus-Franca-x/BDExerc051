@@ -1,8 +1,3 @@
-
-USE master
-
-DROP DATABASE fornecedor_pedido
-
 CREATE DATABASE fornecedor_pedido
 GO
 USE fornecedor_pedido
