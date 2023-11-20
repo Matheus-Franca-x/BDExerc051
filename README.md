@@ -185,10 +185,6 @@ Código	|Produto	|Cliente	|Quantidade|	Valor total	|Data
 3	|3	|876273154-16	|1	|99.99	|9/6/2009
 3	|7	|876273154-16	|1	|25.99	|9/6/2009
 4	|2	|345789092-90	|2	|1399.98	|9/8/2009
-
-
-## Consultar no formato dd/mm/aaaa:	
-- Data da Venda 4	
 	
 ## Inserir na tabela Fornecedor, a coluna Telefone e os seguintes dados:	
 id | telefone
@@ -196,10 +192,10 @@ id | telefone
 1	|7216-5371
 2	|8715-3738
 4	|3654-6289
-
-## Consultar por ordem alfabética de nome, o nome, o enderço concatenado e o telefone dos fornecedores	
 	
 ## Consultar:	
+- no formato dd/mm/aaaa da data da Venda 4	
+- Por ordem alfabética de nome, o nome, o enderço concatenado e o telefone dos fornecedores	
 - Produto, quantidade e valor total do comprado por Julio Cesar	
 - Data, no formato dd/mm/aaaa e valor total do produto comprado por  Paulo Cesar	
 - Consultar, em ordem decrescente, o nome e o preço de todos os produtos 	
