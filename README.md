@@ -1,9 +1,18 @@
 # BDExerc051
-
+---
 ## link:
-### [exercicio1](#exercicio-1)
+### [exercicio 1](#exercicio-1)
 
-### [exercicio1](#exercicio-2)
+### [exercicio 2](#exercicio-2)
+
+### [exercicio 3](#exercicio-3)
+
+### [exercicio 4](#exercicio-4)
+
+### [exercicio 5](#exercicio-5)
+
+### [exercicio 6](#exercicio-6)
+---
 
 ## Exercício 1:
 
