@@ -259,3 +259,35 @@ Código	|Código_Cliente	|Código_Produto	|Quantidade	|Previsão_Entrega
 
 
 ## Exercício 6:
+
+### Motorista:
+Código	|Nome	|Data_nascimento	|Naturalidade
+-|-|-|-
+12341	|Julio Cesar	|1978-04-18	|São Paulo
+12342	|Mario Carmo	|2002-07-29	|Americana
+12343	|Lucio Castro	|1969-12-01	|Campinas
+12344	|André Figueiredo	|1999-05-14	|São Paulo
+12345	|Luiz Carlos	|2001-01-09	|São Paulo
+
+### Ônibus:
+Placa	|Marca	|Ano	|Descrição
+-|-|-|-
+adf0965   	|Mercedes            	|1999	|Leito               
+bhg7654   	|Mercedes            	|2002	|Sem Banheiro        
+dtr2093   	|Mercedes            	|2001	|Ar Condicionado     
+gui7625   	|Volvo               	|2001	|Ar Condicionado     
+
+### Viagem:
+Código	|ônibus	|Motorista	|Hora de Saída	|Hora de Chegada	|Destino
+-|-|-|-|-
+101	|adf0965   	|12343	|10h	|12h	|Campinas
+102	|gui7625   	|12341	|7h	|12h	|Araraquara
+103	|bhg7654   	|12345	|14h	|22h	|Rio de Janeiro
+104	|dtr2093   	|12344	|18h	|21h	|Sorocaba
+
+## Consultar:
+- Da tabela viagem, todas as horas de chegada e saída, convertidas em formato HH:mm (108) e seus destinos
+- Com subquery, o nome do motorista que viaja para Sorocaba
+- Com subquery, a descrição do ônibus que vai para o Rio de Janeiro
+- Com Subquery, a descrição, a marca e o ano do ônibus dirigido por Luiz Carlos
+- O nome, a idade e a naturalidade dos motoristas com mais de 30 anos
