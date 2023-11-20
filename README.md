@@ -1,6 +1,6 @@
 # BDExerc051
 ---
-## link:
+## links:
 ### [exercicio 1](#exercicio-1)
 
 ### [exercicio 2](#exercicio-2)
@@ -142,3 +142,66 @@ Data	|CPF Paciente	|Código Médico	|Diagnóstico	|Medicamento
 ## Alterar:
 - O telefone da paciente Maria Rita, para 98345621
 - O Endereço de Joana de Souza para Voluntários da Pátria, 1980, Jd. Aeroporto
+
+## Exercicio 4:
+
+### Cliente:
+CPF	|Nome	|Telefone
+-|-|-
+345789092-90	|Julio Cesar	|8273-6541
+251865337-10	|Maria Antonia	|8765-2314
+876273154-16	|Luiz Carlos	|6128-9012
+791826398-00	|Paulo Cesar	|9076-5273
+
+### Produto:
+Código	Descrição	Fornecedor	Preço
+-|-|-|-
+1	|Monitor 19 pol.	|1	|449.99
+2	|Netbook 1GB Ram 4 Gb HD	|2	|699.99
+3	|Gravador de DVD - Sata	|1	|99.99
+4	|Leitor de CD	|1	|49.99
+5	|Processador - Phenom X3 - 2.1GHz	|3	|349.99
+6	|Mouse	|4	|19.99
+7	|Teclado	|4	|25.99
+8	|Placa de Video - Nvidia 9800 GTX - 256MB/256 bits|	5	|599.99
+
+### Fornecedor:
+ID	|Nome	|Logradouro	|N°	|Complemento	|Cidade
+-|-|-|-|-|-
+1	|LG	|Rod. Bandeirantes	|70000	|Km 70	|Itapeva
+2	|Asus	|Av. Nações Unidas	|10206	|Sala 225	|São Paulo
+3	|AMD	|Av. Nações Unidas	|10206	|Sala 1095	|São Paulo
+4	|Leadership	|Av. Nações Unidas	|10206	|Sala 87	|São Paulo
+5	|Inno	|Av. Nações Unidas	|10206	|Sala 34	|São Paulo
+
+### Venda:
+Código	|Produto	|Cliente	|Quantidade|	Valor total	|Data
+-|-|-|-|-|-
+1	|1	|251865337-10	|1	|449.99	|9/3/2009
+1	|4	|251865337-10	|1	|49.99	|9/3/2009
+1	|5	|251865337-10	|1	|349.99	|9/3/2009
+2	|6	|791826398-00	|4	|79.96	|9/6/2009
+3	|8	|876273154-16	|1	|599.99	|9/6/2009
+3	|3	|876273154-16	|1	|99.99	|9/6/2009
+3	|7	|876273154-16	|1	|25.99	|9/6/2009
+4	|2	|345789092-90	|2	|1399.98	|9/8/2009
+
+
+## Consultar no formato dd/mm/aaaa:	
+- Data da Venda 4	
+	
+## Inserir na tabela Fornecedor, a coluna Telefone e os seguintes dados:	
+id | telefone
+-|-
+1	|7216-5371
+2	|8715-3738
+4	|3654-6289
+
+## Consultar por ordem alfabética de nome, o nome, o enderço concatenado e o telefone dos fornecedores	
+	
+## Consultar:	
+- Produto, quantidade e valor total do comprado por Julio Cesar	
+- Data, no formato dd/mm/aaaa e valor total do produto comprado por  Paulo Cesar	
+- Consultar, em ordem decrescente, o nome e o preço de todos os produtos 	
+
+
