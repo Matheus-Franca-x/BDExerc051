@@ -1,7 +1,8 @@
 # BDExerc051
 
 ## link:
-### [exercicio1](#exercicio-1)
+### [exercicio1](#exercicio-1:)
+### [exercicio1](#exercicio-2:)
 
 ## Exercício 1:
 
