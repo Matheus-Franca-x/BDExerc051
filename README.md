@@ -5,13 +5,13 @@
 
 ### [exercicio 2](#exercício-2)
 
-### [exercicio 3](#exercicio-3)
+### [exercicio 3](#exercício-3)
 
-### [exercicio 4](#exercicio-4)
+### [exercicio 4](#exercício-4)
 
-### [exercicio 5](#exercicio-5)
+### [exercicio 5](#exercício-5)
 
-### [exercicio 6](#exercicio-6)
+### [exercicio 6](#exercício-6)
 ---
 
 ## Exercício 1:
@@ -53,7 +53,7 @@
 - Nome e Turno dos cursos com 2800 horas
 - O semestre do curso de Banco de Dados I noite
 
-## Exercicio 2:
+## Exercício 2:
 
 ### Cliente:
 |Nome	|Logradouro	|Nº	|Bairro	|Telefone	|Carro
@@ -98,7 +98,7 @@ DXO9876	|2	|1	|125	|07/08/2020
 - Marca, modelo e cor, concatenado dos carros posteriores a 2005
 - Código e nome das peças que custam menos de R$80,00
 
-## Exercicio 3:
+## Exercício 3:
 
 ### Paciente:
 CPF	|Nome	|Rua	|N°	|Bairro	|Telefone	|Data_Nasc
@@ -143,7 +143,7 @@ Data	|CPF Paciente	|Código Médico	|Diagnóstico	|Medicamento
 - O telefone da paciente Maria Rita, para 98345621
 - O Endereço de Joana de Souza para Voluntários da Pátria, 1980, Jd. Aeroporto
 
-## Exercicio 4:
+## Exercício 4:
 
 ### Cliente:
 CPF	|Nome	|Telefone
