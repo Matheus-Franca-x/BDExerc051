@@ -17,7 +17,7 @@
 ## Exercício 1:
 
 ### Aluno:
-|  RA   | Nome   | Sobrenome |           Rua          |  Nº  | Bairro	          |   CEP   | Telefone |
+|  RA(PK)   | Nome   | Sobrenome |           Rua          |  Nº  | Bairro	          |   CEP   | Telefone |
 |   -   |    -   |     -     |            -           |   -  |        -         |    -    |     -    |
 | 12345 |	José   | Silva     | Almirante Noronha	    | 236  | Jardim São Paulo | 1589000	| 69875287 |
 | 12346	| Ana    | Maria     | Bastos	Anhaia	        | 1568 | Barra Funda	    | 3569000	| 25698526 |
@@ -25,7 +25,7 @@
 | 12348	| Marcia | Neves	   | Voluntários da Patria	| 225	 | Santana	        | 2785090 |	78964152 |
 
 ### Curso:
-| Código	|Nome	|Carga Horária	|Turno|
+| Código(PK)	|Nome	|Carga Horária	|Turno|
 | - | - | - | - |
 |1	|Informática	|2800	|Tarde|
 |2	|Informática	|2800	|Noite|
@@ -35,7 +35,7 @@
 |6	|Plásticos	|2500	|Noite|
 
 ### Disciplina:
-|Código	|Nome	|Carga Horária	|Turno |Semestre
+|Código(PK)	|Nome	|Carga Horária	|Turno |Semestre
 |-|-|-|-|-
 |1	|Informática	|4	|Tarde	|1
 |2	|Informática	|4	|Noite	|1
@@ -56,7 +56,7 @@
 ## Exercício 2:
 
 ### Cliente:
-|Nome	|Logradouro	|Nº	|Bairro	|Telefone	|Carro
+|Nome	|Logradouro	|Nº	|Bairro	|Telefone	|Carro(PK)(FK)
 |-|-|-|-|-|-
 |João Alves|	R. Pereira Barreto|	1258	|Jd. Oliveiras|	2154-9658|	DXO9876
 |Ana Maria|	R. 7 de Setembro|	259	|Centro|	9658-8541	|LKM7380
@@ -65,7 +65,7 @@
 |Paula Rocha|	R. Anhaia|	548	|Barra Funda|	6958-2548	|AFT9087
 
 ### Carro:
-|Placa	|Marca	|Modelo	|Cor	|Ano
+|Placa(PK)	|Marca	|Modelo	|Cor	|Ano
 |-|-|-|-|-
 |AFT9087|	VW	|Gol	|Preto	|2007
 |DXO9876|	Ford	|Ka	|Azul	|2000
@@ -74,7 +74,7 @@
 |BCD7521|	Ford	|Fiesta	|Preto	|1999
 
 ### Peças:
-|Código	|Nome	|Valor
+|Código(PK)	|Nome	|Valor
 |-|-|-
 |1	|Vela	|70
 |2	|Correia Dentada	|125
@@ -82,7 +82,7 @@
 |4	|Filtro de Ar	|30
 
 ### Serviços:
-|Carro	|Peça	|Quantidade	|Valor	|Data
+|Carro(PK)(FK)	|Peça(PK)(FK)	|Quantidade	|Valor	|Data(PK)
 |-|-|-|-|-
 DXO9876	|1	|4	|280	|01/08/2020
 DXO9876	|4	|1	|30	|01/08/2020
@@ -101,7 +101,7 @@ DXO9876	|2	|1	|125	|07/08/2020
 ## Exercício 3:
 
 ### Paciente:
-CPF	|Nome	|Rua	|N°	|Bairro	|Telefone	|Data_Nasc
+CPF(PK)	|Nome	|Rua	|N°	|Bairro	|Telefone	|Data_Nasc
 -|-|-|-|-|-|-
 35454562890	|José Rubens	|Campos Salles	|2750	|Centro	|21450998	|1954-10-18
 29865439810	|Ana Claudia	|Sete de Setembro	|178	|Centro	|97382764	|1960-05-29
@@ -110,7 +110,7 @@ CPF	|Nome	|Rua	|N°	|Bairro	|Telefone	|Data_Nasc
 92173458910	|Joana de Souza	|XV de Novembro	|298	|Centro	|21276578	|1944-04-24
 
 ### Medico:
-Código	|Nome	|Especialidade
+Código(PK)	|Nome	|Especialidade
 -|-|-
 1	|Wilson Cesar	|Pediatra
 2	|Marcia Matos	|Geriatra
@@ -118,7 +118,7 @@ Código	|Nome	|Especialidade
 4	|Vinicius Araujo	|Clínico Geral
 
 ### Prontuário:
-Data	|CPF Paciente	|Código Médico	|Diagnóstico	|Medicamento
+Data(PK)	|CPF Paciente(PK)(FK)	|Código Médico(PK)(FK)	|Diagnóstico	|Medicamento
 -|-|-|-|-
 2020-09-10	|35454562890	|2	|Reumatismo	|Celebra
 2020-09-10	|92173458910	|2	|Renite Alérgica	|Allegra
@@ -146,7 +146,7 @@ Data	|CPF Paciente	|Código Médico	|Diagnóstico	|Medicamento
 ## Exercício 4:
 
 ### Cliente:
-CPF	|Nome	|Telefone
+CPF(PK)	|Nome	|Telefone
 -|-|-
 345789092-90	|Julio Cesar	|8273-6541
 251865337-10	|Maria Antonia	|8765-2314
@@ -154,7 +154,7 @@ CPF	|Nome	|Telefone
 791826398-00	|Paulo Cesar	|9076-5273
 
 ### Produto:
-Código	|Descrição	|Fornecedor	|Preço
+Código(PK)	|Descrição	|Fornecedor(FK)	|Preço
 -|-|-|-
 1	|Monitor 19 pol.	|1	|449.99
 2	|Netbook 1GB Ram 4 Gb HD	|2	|699.99
@@ -166,7 +166,7 @@ Código	|Descrição	|Fornecedor	|Preço
 8	|Placa de Video - Nvidia 9800 GTX - 256MB/256 bits|	5	|599.99
 
 ### Fornecedor:
-ID	|Nome	|Logradouro	|N°	|Complemento	|Cidade
+ID(PK)	|Nome	|Logradouro	|N°	|Complemento	|Cidade
 -|-|-|-|-|-
 1	|LG	|Rod. Bandeirantes	|70000	|Km 70	|Itapeva
 2	|Asus	|Av. Nações Unidas	|10206	|Sala 225	|São Paulo
@@ -175,7 +175,7 @@ ID	|Nome	|Logradouro	|N°	|Complemento	|Cidade
 5	|Inno	|Av. Nações Unidas	|10206	|Sala 34	|São Paulo
 
 ### Venda:
-Código	|Produto	|Cliente	|Quantidade|	Valor total	|Data
+Código(PK)	|Produto(PK)(FK)	|Cliente(PK)(FK)	|Quantidade|	Valor total	|Data
 -|-|-|-|-|-
 1	|1	|251865337-10	|1	|449.99	|9/3/2009
 1	|4	|251865337-10	|1	|49.99	|9/3/2009
@@ -203,7 +203,7 @@ id | telefone
 ## Exercício 5:
 
 ### Produto:
-Codigo	|Nome	|Valor_Unitário	|Quantidade_Estoque	|Descrição	|Código_Fornecedor
+Codigo(PK)	|Nome	|Valor_Unitário	|Quantidade_Estoque	|Descrição	|Código_Fornecedor(FK)
 -|-|-|-|-|-
 1	|Banco Imobiliário	|65.00	|15	|Versão Super Luxo	|1001
 2	|Puzzle 5000 peças	|50.00	|5	|Mapas Mundo	|1005
@@ -215,7 +215,7 @@ Codigo	|Nome	|Valor_Unitário	|Quantidade_Estoque	|Descrição	|Código_Forneced
 8	|Galak	|5.00	|65	|Barra	|1002
 
 ### Fornecedores:
-Código	|Nome	|Atividade	|Telefone
+Código(PK)	|Nome	|Atividade	|Telefone
 -|-|-|-
 1001	|Estrela	|Brinquedo	|41525898
 1002	|Lacta	|Chocolate	|42698596
@@ -225,7 +225,7 @@ Código	|Nome	|Atividade	|Telefone
 1006	|Mattel	|Bonecos	|59865898
 
 ### Cliente:
-Código	|Nome	|Logradouro	|Numero	|Telefone	|Data_Nasc
+Código(PK)	|Nome	|Logradouro	|Numero	|Telefone	|Data_Nasc
 -|-|-|-|-|-
 33601	|Maria Clara	|R. 1° de Abril	|870	|96325874	|2000-08-15
 33602	|Alberto Souza	|R. XV de Novembro	|987	|95873625	|1985-02-02
@@ -234,7 +234,7 @@ Código	|Nome	|Logradouro	|Numero	|Telefone	|Data_Nasc
 33605	|Carlos Camargo	|Av. Tiquatira	|9652	|75896325	|1971-03-25
 
 ### Pedido:
-Código	|Código_Cliente	|Código_Produto	|Quantidade	|Previsão_Entrega
+Código(PK)	|Código_Cliente(PK)(FK)	|Código_Produto(PK)(FK)	|Quantidade	|Previsão_Entrega
 -|-|-|-|-
 99001	|33601	|1	|1	|2012-06-07
 99001	|33601	|2	|1	|2012-06-07
@@ -261,7 +261,7 @@ Código	|Código_Cliente	|Código_Produto	|Quantidade	|Previsão_Entrega
 ## Exercício 6:
 
 ### Motorista:
-Código	|Nome	|Data_nascimento	|Naturalidade
+Código(PK)	|Nome	|Data_nascimento	|Naturalidade
 -|-|-|-
 12341	|Julio Cesar	|1978-04-18	|São Paulo
 12342	|Mario Carmo	|2002-07-29	|Americana
@@ -270,7 +270,7 @@ Código	|Nome	|Data_nascimento	|Naturalidade
 12345	|Luiz Carlos	|2001-01-09	|São Paulo
 
 ### Ônibus:
-Placa	|Marca	|Ano	|Descrição
+Placa(PK)	|Marca	|Ano	|Descrição
 -|-|-|-
 adf0965   	|Mercedes            	|1999	|Leito               
 bhg7654   	|Mercedes            	|2002	|Sem Banheiro        
@@ -278,7 +278,7 @@ dtr2093   	|Mercedes            	|2001	|Ar Condicionado     
 gui7625   	|Volvo               	|2001	|Ar Condicionado     
 
 ### Viagem:
-Código	|ônibus	|Motorista	|Hora de Saída	|Hora de Chegada	|Destino
+Código(PK)	|ônibus(FK)	|Motorista(FK)	|Hora de Saída	|Hora de Chegada	|Destino
 -|-|-|-|-|-
 101	|adf0965   	|12343	|10h	|12h	|Campinas
 102	|gui7625   	|12341	|7h	|12h	|Araraquara
