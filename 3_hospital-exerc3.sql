@@ -1,7 +1,3 @@
-USE master
-
-DROP DATABASE hospital
-
 CREATE DATABASE hospital
 GO
 USE hospital
