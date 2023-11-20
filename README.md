@@ -279,7 +279,7 @@ gui7625   	|Volvo               	|2001	|Ar Condicionado     
 
 ### Viagem:
 Código	|ônibus	|Motorista	|Hora de Saída	|Hora de Chegada	|Destino
--|-|-|-|-
+-|-|-|-|-|-
 101	|adf0965   	|12343	|10h	|12h	|Campinas
 102	|gui7625   	|12341	|7h	|12h	|Araraquara
 103	|bhg7654   	|12345	|14h	|22h	|Rio de Janeiro
