@@ -154,7 +154,7 @@ CPF	|Nome	|Telefone
 791826398-00	|Paulo Cesar	|9076-5273
 
 ### Produto:
-Código	Descrição	Fornecedor	Preço
+Código	|Descrição	|Fornecedor	|Preço
 -|-|-|-
 1	|Monitor 19 pol.	|1	|449.99
 2	|Netbook 1GB Ram 4 Gb HD	|2	|699.99
