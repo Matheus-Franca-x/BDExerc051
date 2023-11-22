@@ -74,6 +74,7 @@ VALUES
 ('EGT4631',	3,	1,	90, '2020-08-02'),
 ('DXO9876',	2,	1,	125, '2020-08-07')
 
+--1) Telefone do dono do carro Ka, Azul.
 SELECT telefone
 FROM cliente
 WHERE carro IN 
@@ -82,6 +83,7 @@ WHERE carro IN
 		WHERE modelo LIKE 'Ka' AND cor LIKE 'Azul'
 	)
 
+--2) Endereço concatenado do cliente que fez o serviço do dia 02/08/2009 → corrigido para 02/08/2020.
 SELECT logr_end + ' ' + CAST(num_end AS VARCHAR) + ' - ' + bairro_end AS endereco
 FROM cliente
 WHERE carro IN 
@@ -91,14 +93,17 @@ WHERE carro IN
 		WHERE data_servico = '2020-08-01'
 	)
 
+--3) Placas dos carros de anos anteriores a 2001.
 SELECT placa 
 FROM carro 
 WHERE ano < 2001
 
+--4) Marca, modelo e cor, concatenado dos carros posteriores a 2005.
 SELECT marca + ' - ' + modelo + ' - ' + cor AS tipo_carro
 FROM carro 
 WHERE ano > 2005
 
+--5) Código e nome das peças que custam menos de R$80,00.
 SELECT codigo 
 FROM peca 
 WHERE valor < 80
