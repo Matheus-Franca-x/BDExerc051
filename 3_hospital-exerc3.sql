@@ -58,23 +58,29 @@ VALUES
 ('2020-09-15',	'82176534800',	4,	'Gripe',	'Resprin'),
 ('2020-09-15',	'12386758770',	3,	'Braço Quebrado',	'Dorflex + Gesso')
 
+--1) Nome e Endereço (concatenado) dos pacientes com mais de 50 anos.
 SELECT nome, rua_end + ' ' + CAST(num_end AS VARCHAR) + ' - ' + bairro_end  AS endereco
 FROM paciente
 WHERE DATEDIFF(YEAR, data_nasc, GETDATE()) > 50
 
+--2) Qual a especialidade de Carolina Oliveira.
 SELECT especialidade 
 FROM medico 
 WHERE nome LIKE '%carolina%'
 
+--3) Qual medicamento receitado para reumatismo.
 SELECT medicamento 
 FROM prontuario 
 WHERE diagnostico LIKE 'reumatismo'
 
+--4) Diagnóstico e Medicamento do paciente José Rubens em suas consultas.
 SELECT p.nome, pr.diagnostico, pr.medicamento 
 FROM paciente p, prontuario pr
 WHERE p.cpf = pr.cpf_paciente
 	AND p.nome LIKE 'José%'
-	
+
+--5) Nome e especialidade do(s) Médico(s) que atenderam José Rubens. 
+--   Caso a especialidade tenha mais de 3 letras, mostrar apenas as 3 primeiras letras concatenada com um ponto final (.).
 SELECT m.nome AS 
 nome_medico, 
 CASE WHEN LEN(m.especialidade) > 3
@@ -88,7 +94,8 @@ FROM medico m, prontuario pr, paciente p
 WHERE m.codigo = pr.codigo_medico 
 	AND pr.cpf_paciente = p.cpf 
 	AND p.nome LIKE 'José%'
-	
+
+--6) CPF (Com a máscara XXX.XXX.XXX-XX), Nome, Endereço completo (Rua, nº - Bairro), Telefone (Caso nulo, mostrar um traço (-)) dos pacientes do médico Vinicius.
 SELECT p.cpf, p.nome, p.rua_end + ' ' + CAST(p.num_end AS VARCHAR) + ' - ' + p.bairro_end AS endereco, 
 	CASE WHEN p.telefone IS NULL
 	THEN '-'
@@ -99,15 +106,18 @@ WHERE p.cpf = pr.cpf_paciente
 	AND pr.codigo_medico = m.codigo 
 	AND m.nome LIKE 'Vinicius%'
 
+--7) Quantos dias fazem da consulta de Maria Rita até hoje.
 SELECT DATEDIFF(DAY, pr.data_pront, GETDATE()), p.nome  
 FROM paciente p, prontuario pr
 WHERE p.cpf = pr.cpf_paciente 
 	AND p.nome LIKE 'Maria%'
-	
+
+--8) O telefone da paciente Maria Rita, para 98345621.
 UPDATE paciente 
 SET telefone = '98345621'
 WHERE nome LIKE 'Maria%'
 
+--9) O Endereço de Joana de Souza para Voluntários da Pátria, 1980, Jd. Aeroporto.
 UPDATE paciente 
 SET rua_end = 'Voluntários da Pátria', num_end = 1980, bairro_end = 'Jd. Aeroporto'
 WHERE nome LIKE 'Joana%'
