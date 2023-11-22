@@ -128,20 +128,20 @@ Data(PK)	|CPF Paciente(PK)(FK)	|Código Médico(PK)(FK)	|Diagnóstico	|Medicamen
 2020-09-15	|12386758770	|3	|Braço Quebrado	|Dorflex + Gesso
 
 ## Consultar:
-1) Nome e Endereço (concatenado) dos pacientes com mais de 50 anos
-2) Qual a especialidade de Carolina Oliveira
-3) Qual medicamento receitado para reumatismo
+1) Nome e Endereço (concatenado) dos pacientes com mais de 50 anos.
+2) Qual a especialidade de Carolina Oliveira.
+3) Qual medicamento receitado para reumatismo.
 
 
 ## Consultar em subqueries:
-4) Diagnóstico e Medicamento do paciente José Rubens em suas consultas
-5) Nome e especialidade do(s) Médico(s) que atenderam José Rubens. Caso a especialidade tenha mais de 3 letras, mostrar apenas as 3 primeiras letras concatenada com um ponto final (.)
-6) CPF (Com a máscara XXX.XXX.XXX-XX), Nome, Endereço completo (Rua, nº - Bairro), Telefone (Caso nulo, mostrar um traço (-)) dos pacientes do médico Vinicius
-7) Quantos dias fazem da consulta de Maria Rita até hoje
+4) Diagnóstico e Medicamento do paciente José Rubens em suas consultas.
+5) Nome e especialidade do(s) Médico(s) que atenderam José Rubens. Caso a especialidade tenha mais de 3 letras, mostrar apenas as 3 primeiras letras concatenada com um ponto final (.).
+6) CPF (Com a máscara XXX.XXX.XXX-XX), Nome, Endereço completo (Rua, nº - Bairro), Telefone (Caso nulo, mostrar um traço (-)) dos pacientes do médico Vinicius.
+7) Quantos dias fazem da consulta de Maria Rita até hoje.
 
 ## Alterar:
-8) O telefone da paciente Maria Rita, para 98345621
-9) O Endereço de Joana de Souza para Voluntários da Pátria, 1980, Jd. Aeroporto
+8) O telefone da paciente Maria Rita, para 98345621.
+9) O Endereço de Joana de Souza para Voluntários da Pátria, 1980, Jd. Aeroporto.
 
 ## Exercício 4:
 
@@ -194,11 +194,11 @@ id | telefone
 4	|3654-6289
 	
 ## Consultar:	
-1) no formato dd/mm/aaaa da data da Venda 4	
-2) Por ordem alfabética de nome, o nome, o enderço concatenado e o telefone dos fornecedores	
-3) Produto, quantidade e valor total do comprado por Julio Cesar	
-4) Data, no formato dd/mm/aaaa e valor total do produto comprado por  Paulo Cesar	
-5) Consultar, em ordem decrescente, o nome e o preço de todos os produtos 	
+1) no formato dd/mm/aaaa da data da Venda 4.
+2) Por ordem alfabética de nome, o nome, o enderço concatenado e o telefone dos fornecedores.
+3) Produto, quantidade e valor total do comprado por Julio Cesar.
+4) Data, no formato dd/mm/aaaa e valor total do produto comprado por  Paulo Cesar.
+5) Consultar, em ordem decrescente, o nome e o preço de todos os produtos.
 
 ## Exercício 5:
 
@@ -252,10 +252,10 @@ Código(PK)	|Código_Cliente(PK)(FK)	|Código_Produto(PK)(FK)	|Quantidade	|Previ
 4) Verificar quais brinquedos não tem itens em estoque.
 5) Quantos clientes tem mais de 40 anos.
 6) Nome e telefone dos fornecedores de Brinquedos e Chocolate.
-7) Nome e desconto de 25% no preço dos produtos que custam menos de R$50,00
-8) Nome e aumento de 10% no preço dos produtos que custam mais de R$100,00
+7) Nome e desconto de 25% no preço dos produtos que custam menos de R$50,00.
+8) Nome e aumento de 10% no preço dos produtos que custam mais de R$100,00.
 9) Desconto de 15% no valor total de cada produto da venda 99001.
-10) Código do pedido, nome do cliente e idade atual do cliente
+10) Código do pedido, nome do cliente e idade atual do cliente.
 
 
 ## Exercício 6:
@@ -286,8 +286,8 @@ Código(PK)	|ônibus(FK)	|Motorista(FK)	|Hora de Saída	|Hora de Chegada	|Destin
 104	|dtr2093   	|12344	|18h	|21h	|Sorocaba
 
 ## Consultar:
-1) Da tabela viagem, todas as horas de chegada e saída, convertidas em formato HH:mm (108) e seus destinos
-2) Com subquery, o nome do motorista que viaja para Sorocaba
-3) Com subquery, a descrição do ônibus que vai para o Rio de Janeiro
-4) Com Subquery, a descrição, a marca e o ano do ônibus dirigido por Luiz Carlos
-5) O nome, a idade e a naturalidade dos motoristas com mais de 30 anos
+1) Da tabela viagem, todas as horas de chegada e saída, convertidas em formato HH:mm (108) e seus destinos.
+2) Com subquery, o nome do motorista que viaja para Sorocaba.
+3) Com subquery, a descrição do ônibus que vai para o Rio de Janeiro.
+4) Com Subquery, a descrição, a marca e o ano do ônibus dirigido por Luiz Carlos.
+5) O nome, a idade e a naturalidade dos motoristas com mais de 30 anos.
