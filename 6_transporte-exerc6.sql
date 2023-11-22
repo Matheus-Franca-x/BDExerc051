@@ -55,9 +55,11 @@ VALUES
 ('bhg7654', 12345, '14:00:00', '22:00:00', 'Rio de Janeiro'),
 ('dtr2093', 12344, '18:00:00', '21:00:00', 'Sorocaba')
 
+--1) Da tabela viagem, todas as horas de chegada e saída, convertidas em formato HH:mm (108) e seus destinos.
 SELECT CONVERT(VARCHAR, hora_saida, 108) AS hora_saida, CONVERT(VARCHAR, hora_chegada, 108) AS hora_chegada, destino 
 FROM viagem
 
+--2) Com subquery, o nome do motorista que viaja para Sorocaba.
 SELECT nome 
 FROM motorista
 WHERE codigo IN 
@@ -67,6 +69,7 @@ WHERE codigo IN
 		WHERE destino LIKE 'Sorocaba'
 	)
 
+--3) Com subquery, a descrição do ônibus que vai para o Rio de Janeiro.
 SELECT descricao 
 FROM onibus
 WHERE placa IN 
@@ -76,6 +79,7 @@ WHERE placa IN
 		WHERE destino LIKE 'Rio de Janeiro'
 	)
 
+--4) Com Subquery, a descrição, a marca e o ano do ônibus dirigido por Luiz Carlos.
 SELECT *
 FROM onibus o 
 WHERE placa IN
@@ -90,6 +94,7 @@ WHERE placa IN
 			)
 	)
 
+--5) O nome, a idade e a naturalidade dos motoristas com mais de 30 anos.
 SELECT nome, DATEDIFF(YEAR, data_nascimento, GETDATE()) AS idade, naturalidade  
 FROM motorista
 WHERE DATEDIFF(YEAR, data_nascimento, GETDATE()) > 30 
