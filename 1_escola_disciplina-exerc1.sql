@@ -61,21 +61,26 @@ VALUES
 ('Estrutura de Dados', 4, 'Tarde', 4),
 ('Estrutura de Dados', 4, 'Noite', 4)
 
+--1) Nome e sobrenome, como nome completo dos Alunos Matriculados.
 SELECT nome + ' ' + sobrenome AS alunos_matriculados 
 FROM aluno
 
+--2) Rua, nº , Bairro e CEP como Endereço do aluno que não tem telefone.
 SELECT rua_end + ' ' + CAST(num_end AS VARCHAR) + ' - ' + bairro_end + ' - ' + cep_end AS endereco 
 FROM aluno 
 WHERE telefone = ''
 
+--3) Telefone do aluno com RA 12348.
 SELECT telefone 
 FROM aluno 
 WHERE ra = 12348
 
+--4) Nome e Turno dos cursos com 2800 horas.
 SELECT nome, turno
 FROM curso 
 WHERE carga_horaria = 2800
 
+--5) O semestre do curso de Banco de Dados I noite.
 SELECT semestre 
 FROM disciplina 
 WHERE nome LIKE 'Banco de Dados%' AND turno LIKE 'Noite'
