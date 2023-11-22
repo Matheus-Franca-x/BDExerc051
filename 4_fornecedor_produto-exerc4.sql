@@ -82,10 +82,6 @@ VALUES
 (4,	2,	'34578909290',	2,	1399.98, '2009-09-08')
 
 
-SELECT CONVERT(VARCHAR, data_venda, 103)
-FROM venda
-WHERE venda.codigo = 4
-
 ALTER TABLE fornecedor 
 ADD telefone CHAR(13)
 
@@ -101,21 +97,30 @@ UPDATE fornecedor
 SET telefone = '36546289'
 WHERE id = 4
 
+--1) No formato dd/mm/aaaa da data da Venda 4.
+SELECT CONVERT(VARCHAR, data_venda, 103)
+FROM venda
+WHERE venda.codigo = 4
+
+--2) Por ordem alfabética de nome, o nome, o enderço concatenado e o telefone dos fornecedores.
 SELECT nome, logr_end + ' ' + CAST(num_end AS VARCHAR) + ' - ' + compl_end + ' - ' + cidade_end AS endereco, telefone
 FROM fornecedor
 ORDER BY nome 
 
+--3) Produto, quantidade e valor total do comprado por Julio Cesar.
 SELECT c.nome, p.descricao, v.quantidade, v.valor_total 
 FROM cliente c, venda v, produto p 
 WHERE c.cpf =  v.cliente 
 	AND v.produto = p.codigo 
 	AND c.nome LIKE 'Julio%'
 
+--4) Data, no formato dd/mm/aaaa e valor total do produto comprado por Paulo Cesar.
 SELECT c.nome, CONVERT(VARCHAR, v.data_venda, 103) AS data_venda, v.valor_total 
 FROM venda v, cliente c
 WHERE v.cliente = c.cpf 
 	AND c.nome LIKE 'Paulo%'
-	
+
+--5) Consultar, em ordem decrescente, o nome e o preço de todos os produtos.
 SELECT *
 FROM produto
 ORDER BY descricao DESC, preco DESC
