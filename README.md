@@ -194,7 +194,7 @@ id | telefone
 4	|3654-6289
 	
 ## Consultar:	
-1) no formato dd/mm/aaaa da data da Venda 4.
+1) No formato dd/mm/aaaa da data da Venda 4.
 2) Por ordem alfabética de nome, o nome, o enderço concatenado e o telefone dos fornecedores.
 3) Produto, quantidade e valor total do comprado por Julio Cesar.
 4) Data, no formato dd/mm/aaaa e valor total do produto comprado por  Paulo Cesar.
